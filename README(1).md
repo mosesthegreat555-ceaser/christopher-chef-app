@@ -1,6 +1,5 @@
-# Chef Christoffel — Chef + Guest app with login screen
+# Chef Christoffel 
 
-**Open this whole folder in Visual Studio Code.** This package includes a React Native / Expo application and a separate offline HTML preview that works immediately in a Windows browser. It contains **application code only** (no PoE document).
 
 ## What was added
 
@@ -11,8 +10,6 @@
 - **Sign out** from either view, so you can change roles and demonstrate both flows.
 - All prior chef actions remain: add, edit, delete, search, filter, and statistics. Saved menu items appear to both roles on the same app/device.
 
-The Part 1 PDF includes dark/blue home, menu, and guest navigation concepts, **but not a separate login-screen mockup**. The new entry screen was designed to match that colour palette and layout rather than copied from a non-existent PDF page.
-
 ## Demo login
 
 | Role | How to enter | What you can do |
@@ -20,32 +17,7 @@ The Part 1 PDF includes dark/blue home, menu, and guest navigation concepts, **b
 | Chef | Username **`chef`**, password **`Chef2026`** | Manage menu items and view statistics |
 | Guest | Select **I'm a guest → Continue as Guest** | View featured dishes, browse/search/filter the menu |
 
-**Security note:** The chef password is stored in application source for a classroom/demo only. This is not real authentication; do not store private data or deploy it as a secure multi-user service. The menu is stored locally, not synced between separate phones/browsers.
 
-## Quickest way on Windows: offline preview
-
-1. **Extract the ZIP** (don't try to run files from inside the ZIP).
-2. Double-click **`OPEN_APP_NOW.bat`**.
-3. Choose Chef or Guest on the first screen. Sign out to switch views.
-
-This preview uses HTML/CSS/JS and local browser storage. It is **not** the React Native build. It is a quick way to demonstrate and inspect the screens.
-
-## Run the real React Native app in VS Code
-
-1. Install **Node.js LTS** and **Visual Studio Code**.
-2. Extract the ZIP, then select **File → Open Folder** in VS Code.
-3. Select **`ChefChristoffel_Guest_Chef_Login_VSCode`** (the folder containing `App.js`).
-4. Open **Terminal → New Terminal** and run:
-
-   ```powershell
-   npm install
-   npx expo install --fix
-   npm run web
-   ```
-
-5. Expo prints a `localhost` URL; open it in your browser. If your browser does not open automatically, try `http://localhost:8081`.
-
-Alternatively run `START_REACT_NATIVE_WEB.bat` after installing Node.js. To start Expo for a device/emulator, use `npm start` (or `START_REACT_NATIVE_PHONE.bat`). An appropriate Expo Go or development build may be needed depending on SDK compatibility.
 
 ### Tests
 
@@ -67,7 +39,6 @@ Run `npm run check` in the VS Code terminal. There are **10 automated tests** fo
 - `browser-preview/`: separate working offline preview.
 - `screenshots/`: screenshots of the **browser preview**, not verified React Native screenshots.
 
-For a new classroom assessment, test the Android / iOS build on the device used in your presentation.
 
 ## Harvard referencing
 
@@ -98,4 +69,3 @@ Visual Studio Code (n.d.) *Get started with Visual Studio Code*. Available at: h
 - **MDN Web Docs:** saving menu information in the separate HTML/browser demonstration.
 - **Visual Studio Code:** opening, editing and running the project folder.
 
-> Note: These are technical documentation references. The Chef Christoffel interface design and app-specific code are project work, not quotations taken from those documentation pages.
