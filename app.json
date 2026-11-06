@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Chef Christoffel",
+    "slug": "chef-christoffel",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "chefchristoffel",
+    "android": {
+      "package": "za.student.chefchristoffel",
+      "edgeToEdgeEnabled": true
+    },
+    "ios": {
+      "bundleIdentifier": "za.student.chefchristoffel",
+      "supportsTablet": true
+    },
+    "web": {
+      "name": "Chef Christoffel",
+      "shortName": "Chef Menu",
+      "bundler": "metro"
+    }
+  }
+}
